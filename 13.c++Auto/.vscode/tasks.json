@@ -1,0 +1,46 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Build with GCC 13.2.1",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-g",
+				"-std=c++23",
+				"${workspaceFolder}/*.cpp",
+				"-o",
+				"${fileDirname}/rooster"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/g++"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build with Clang 16.0.6",
+			"command": "/usr/sbin/clang++",
+			"args": [
+				"-g",
+				"-std=c++23",
+				"${workspaceFolder}/*.cpp",
+				"-o",
+				"${fileDirname}/rooster"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/sbin/clang++"
+		},
+		
+	]
+}
